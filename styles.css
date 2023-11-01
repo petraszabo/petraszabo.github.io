@@ -26,15 +26,6 @@ header {
 	background-repeat: no-repeat;
 	background-position: center center;
 }
-.subpage header > img {
-	border: rgba(255,255,255,.5) 100px solid;
-	box-sizing: content-box;
-	position: absolute;
-	z-index: 10;
-	left: 150px;
-	transform: translate(-50%, -60px);
-	max-height: 80%;
-}
 .csillag header {
 	background-image: url(francia_borito.webp);
 }
@@ -58,7 +49,7 @@ header {
 	background-size: cover;
 }
 .subpage section div {
-	margin: 0 auto;
+	margin: 60px auto;
 	max-width: 800px;
 	background-color: rgba(255,255,255,.85);
 	border-radius: 30px;
@@ -71,11 +62,17 @@ header > img, header > a > img {
 	position: absolute;
 	z-index: 10;
 	left: 50%;
-	transform: translate(-50%, -60px);
+	top: 50%;
+	transform: translate(-50%, -50%);
 }
-.subpage header > a > img {
-	transform: translate(-50%, -120px);
+.subpage header > a > img.logo {
+	border: rgba(255,255,255,.5) 100px solid;
+	box-sizing: content-box;
+	position: absolute;
+	z-index: 10;
+	max-height: 220px;
 }
+
 header > div {
 	width: 100%;
 	height: 100%;
