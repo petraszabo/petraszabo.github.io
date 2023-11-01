@@ -1,0 +1,163 @@
+* {
+	box-sizing: border-box;
+}
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #d6c8ae;
+	text-align: center;
+}
+.logo {
+	border-radius: 50%;
+	max-height: 320px;
+}
+header {
+	height: 30vh;
+	position: relative;
+	overflow: hidden;
+}
+.subpage header {
+	height: 20vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.subpage header > img {
+	border: rgba(255,255,255,.5) 100px solid;
+	box-sizing: content-box;
+	position: absolute;
+	z-index: 10;
+	left: 150px;
+	transform: translate(-50%, -60px);
+	max-height: 80%;
+}
+.csillag header {
+	background-image: url(francia_borito.webp);
+}
+.petra header {
+	background-image: url(olasz_borito.jpg);
+}
+.csillag section {
+	background-image: url(francia_etterem.jpg);
+}
+.petra section {
+	background-image: url(olasz_etterem.jpg);
+}
+.subpage section {
+	min-height: 80vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-top: #fff 10px solid;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+.subpage section div {
+	margin: 0 auto;
+	max-width: 800px;
+	background-color: rgba(255,255,255,.85);
+	border-radius: 30px;
+	padding: 30px;
+}
+
+header > img, header > a > img {
+	border: rgba(255,255,255,.5) 100px solid;
+	box-sizing: content-box;
+	position: absolute;
+	z-index: 10;
+	left: 50%;
+	transform: translate(-50%, -60px);
+}
+.subpage header > a > img {
+	transform: translate(-50%, -120px);
+}
+header > div {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+header > div > div {
+	width: 50%;
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+header div.csillag {
+	background-image: url(csiga.webp);
+}
+header div.petra {
+	background-image: url(pizza.jpg);
+}
+.index section {
+	min-height: 70vh;
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	justify-content: center;
+	border-top: #fff 10px solid;
+}
+.index section > div {
+	width: 50%;
+	padding: 30px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	border: #fff 10px solid;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+section div.csillag {
+	background-image: url(francia_etterem.jpg);
+}
+section div.petra {
+	background-image: url(olasz_etterem.jpg);
+}
+section > div > div {
+	margin-top: 60px;
+	background: rgba(255,255,255,.85);
+	border-radius: 30px;
+	padding: 30px;
+	max-width: 400px;
+}
+section > div > div h2 {
+	margin: 0;
+}
+section > div > div p {
+	margin: 15px 0 30px;
+}
+a.btn {
+	display: inline-block;
+	border-radius: 7px;
+	padding: .5em 1.5em;
+	background-color: #c00;
+	color: #fff;
+	text-decoration: none;
+	transition: all .25s;
+}
+.csillag a.btn {
+	background-color: #68b4e3
+}
+a.btn:hover {
+	background-color: #000;
+}
+
+@media screen and (max-width: 800px) {
+	.index section {
+		flex-direction: column;
+	}
+	.index section > div {
+		width: 100%;
+	}	
+}
